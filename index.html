@@ -1,0 +1,38 @@
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Get Local Weather</title></head>
+<body id="body"> 
+  <style>
+body {
+  background: url('http://cdn.apixu.com/weather/64x64/night/116.png');
+  background-size: 80px 60px;
+  background-repeat: no-repeat;
+  background-color:blueviolet;
+  background-position: top center;
+}
+h5   {color: black;
+ font-family: Arial;
+ border: 1px solid blue;
+    font-size: 100%;
+    margin: 20px;}
+</style>
+
+<button onclick="performSearch()">Local weather</button>
+<section id="results">
+  <form id="toggle">
+                <button type="button" id="cel" value='OFF' onclick="SetCelsius();">&deg;C</button>
+                <button type="button" id="far" value='ON' onclick="SetFahrenheit();">&deg;F</button>             
+  </form>
+<div id='Info'>
+<h5  id="description"></h5>
+<h5  id='temperature'></h5>
+<h5  id="location"></h5>
+<h5  id="humidity"></h5>
+<h5 id='speed'></h5>
+<h5 id='GPS'></h5>
+</div>
+</section>
+<script type="text/javascript" src='LocalWeather.js'></script>
+</body>
+</html>
